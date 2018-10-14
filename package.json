@@ -1,0 +1,21 @@
+{
+  "name": "@writetome51/in-ascending-order",
+  "version": "1.0.0",
+  "description": "2 functions check if array of numbers is in ascending order or not",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "math",
+    "numbers",
+    "functions"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "error-if-array-item-is-not-number": "latest",
+    "error-if-not-populated-array": "latest"
+  }
+}
