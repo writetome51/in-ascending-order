@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/in-ascending-order",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "2 functions check if array of numbers is in ascending order or not",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "",
   "dependencies": {
-    "error-if-array-item-is-not-number": "latest",
-    "error-if-not-populated-array": "latest"
+    "error-if-array-item-is-not-number": "~1.0.3",
+    "error-if-not-populated-array": "~1.0.0"
   }
 }
