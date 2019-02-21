@@ -1,4 +1,4 @@
-import { inAscendingOrder } from './inAscendingOrder_notInAscendingOrder';
+import { inAscendingOrder } from './index';
 
 
 // Test 1
