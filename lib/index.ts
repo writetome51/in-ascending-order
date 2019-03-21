@@ -1,8 +1,8 @@
 import { errorIfArrayItemIsNotNumber } from 'error-if-array-item-is-not-number';
-import {errorIfNotPopulatedArray} from 'error-if-not-populated-array';
+import { errorIfNotPopulatedArray } from 'error-if-not-populated-array';
 
 
-export function notInAscendingOrder(numbers): boolean {
+export function notInNumericOrder(numbers): boolean {
 	errorIfNotPopulatedArray(numbers);
 	let i = 0;
 	while ((typeof numbers[i + 1]) !== 'undefined') {
@@ -17,6 +17,6 @@ export function notInAscendingOrder(numbers): boolean {
 }
 
 
-export function inAscendingOrder(numbers): boolean {
-	return !(notInAscendingOrder(numbers));
+export function inNumericOrder(numbers): boolean {
+	return !(notInNumericOrder(numbers));
 }

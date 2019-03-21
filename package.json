@@ -1,7 +1,7 @@
 {
-  "name": "@writetome51/in-ascending-order",
-  "version": "1.0.2",
-  "description": "2 functions check if array of numbers is in ascending order or not",
+  "name": "@writetome51/in-numeric-order",
+  "version": "1.0.0",
+  "description": "2 functions check if array of numbers is in numeric order or not",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,12 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/writetome51/in-ascending-order.git"
+    "url": "git+https://github.com/writetome51/in-numeric-order.git"
   },
   "keywords": [
     "sequential",
     "numbers",
     "numeric",
+    "ascending",
     "order",
     "return",
     "boolean"
@@ -22,9 +23,9 @@
   "author": "Steve Thompson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/writetome51/in-ascending-order/issues"
+    "url": "https://github.com/writetome51/in-numeric-order/issues"
   },
-  "homepage": "https://github.com/writetome51/in-ascending-order#readme",
+  "homepage": "https://github.com/writetome51/in-numeric-order#readme",
   "dependencies": {
     "error-if-array-item-is-not-number": "~1.0.4",
     "error-if-not-populated-array": "~1.0.1"
