@@ -1,4 +1,4 @@
-import { errorIfArrayItemIsNotNumber } from 'error-if-array-item-is-not-number';
+import { errorIfNotFiniteNumber } from 'error-if-not-finite-number';
 import { errorIfNotPopulatedArray } from 'error-if-not-populated-array';
 
 
@@ -7,8 +7,8 @@ export function notInNumericOrder(numbers): boolean {
 	let i = 0;
 	while ((typeof numbers[i + 1]) !== 'undefined') {
 
-		errorIfArrayItemIsNotNumber(numbers[i]);
-		errorIfArrayItemIsNotNumber(numbers[i + 1]);
+		errorIfNotFiniteNumber(numbers[i]);
+		errorIfNotFiniteNumber(numbers[i + 1]);
 
 		if (numbers[i] > numbers[i + 1]) return true;
 		++i;
@@ -18,5 +18,5 @@ export function notInNumericOrder(numbers): boolean {
 
 
 export function inNumericOrder(numbers): boolean {
-	return !(notInNumericOrder(numbers));
+	return (!(notInNumericOrder(numbers)));
 }

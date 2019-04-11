@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/in-numeric-order",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "2 functions check if array of numbers is in numeric order or not",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/writetome51/in-numeric-order#readme",
   "dependencies": {
-    "error-if-array-item-is-not-number": "~1.0.4",
-    "error-if-not-populated-array": "~1.0.1"
+    "error-if-not-finite-number": "~1.0.0",
+    "error-if-not-populated-array": "~1.0.2"
   }
 }
