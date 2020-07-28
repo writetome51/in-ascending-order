@@ -1,21 +1,17 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var error_if_not_finite_number_1 = require("error-if-not-finite-number");
-var error_if_not_populated_array_1 = require("error-if-not-populated-array");
-function notInNumericOrder(numbers) {
-    error_if_not_populated_array_1.errorIfNotPopulatedArray(numbers);
-    var i = 0;
-    while ((typeof numbers[i + 1]) !== 'undefined') {
-        error_if_not_finite_number_1.errorIfNotFiniteNumber(numbers[i]);
-        error_if_not_finite_number_1.errorIfNotFiniteNumber(numbers[i + 1]);
-        if (numbers[i] > numbers[i + 1])
-            return true;
-        ++i;
-    }
-    return false;
+import {errorIfNotFiniteNumber} from 'error-if-not-finite-number';
+import {errorIfLengthIsZero} from 'error-if-length-is-zero';
+import {hasValue} from '@writetome51/has-value-no-value';
+
+
+export function inNumericOrder(numbers) {
+	errorIfLengthIsZero(numbers);
+
+	let i = 0;
+	while (hasValue(numbers[i + 1])) {
+		errorIfNotFiniteNumber(numbers[i]);
+
+		if (numbers[i] > numbers[i + 1]) return false;
+		++i;
+	}
+	return true;
 }
-exports.notInNumericOrder = notInNumericOrder;
-function inNumericOrder(numbers) {
-    return (!(notInNumericOrder(numbers)));
-}
-exports.inNumericOrder = inNumericOrder;

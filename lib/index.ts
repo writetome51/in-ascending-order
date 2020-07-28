@@ -1,22 +1,18 @@
 import { errorIfNotFiniteNumber } from 'error-if-not-finite-number';
-import { errorIfNotPopulatedArray } from 'error-if-not-populated-array';
+import { errorIfLengthIsZero } from 'error-if-length-is-zero';
+import { hasValue } from '@writetome51/has-value-no-value';
 
 
-export function notInNumericOrder(numbers): boolean {
-	errorIfNotPopulatedArray(numbers);
+export function inNumericOrder(numbers): boolean {
+	errorIfLengthIsZero(numbers);
 	let i = 0;
-	while ((typeof numbers[i + 1]) !== 'undefined') {
+	while (hasValue(numbers[i + 1])) {
 
 		errorIfNotFiniteNumber(numbers[i]);
 		errorIfNotFiniteNumber(numbers[i + 1]);
 
-		if (numbers[i] > numbers[i + 1]) return true;
+		if (numbers[i] > numbers[i + 1]) return false;
 		++i;
 	}
-	return false;
-}
-
-
-export function inNumericOrder(numbers): boolean {
-	return (!(notInNumericOrder(numbers)));
+	return true;
 }
