@@ -1,13 +1,9 @@
 {
   "name": "@writetome51/in-numeric-order",
   "version": "2.0.0",
-  "description": "2 functions check if array of numbers is in numeric order or not",
+  "description": "Checks if array of numbers is in numeric order",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/writetome51/in-numeric-order.git"

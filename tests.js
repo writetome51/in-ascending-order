@@ -89,4 +89,3 @@ if (errorTriggered)
     console.log('test 12 passed');
 else
     console.log('test 12 FAILED');
-
