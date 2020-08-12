@@ -1,14 +1,16 @@
 {
   "name": "@writetome51/in-numeric-order",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Checks if array of numbers is in numeric order",
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/writetome51/in-numeric-order.git"
   },
   "keywords": [
+    "check",
     "sequential",
     "numbers",
     "numeric",
@@ -24,7 +26,6 @@
   },
   "homepage": "https://github.com/writetome51/in-numeric-order#readme",
   "dependencies": {
-    "@writetome51/has-value-no-value": "^2.0.0",
     "error-if-length-is-zero": "^1.0.1",
     "error-if-not-finite-number": "^2.0.0"
   }
