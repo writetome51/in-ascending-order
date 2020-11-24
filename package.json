@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/in-numeric-order",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Checks if array of numbers is in numeric order",
   "type": "module",
   "main": "index.js",
@@ -14,6 +14,7 @@
     "sequential",
     "numbers",
     "numeric",
+    "array",
     "ascending",
     "order",
     "return",
@@ -26,7 +27,7 @@
   },
   "homepage": "https://github.com/writetome51/in-numeric-order#readme",
   "dependencies": {
-    "error-if-length-is-zero": "^1.0.1",
-    "error-if-not-finite-number": "^2.0.0"
+    "error-if-length-is-zero": ">=1.0.1",
+    "error-if-not-finite-number": ">=2.0.0"
   }
 }

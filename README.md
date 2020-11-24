@@ -1,9 +1,10 @@
 # inNumericOrder(numbers): boolean
 
+If `numbers` are in ascending order, returns true.  
 Each item in `numbers` must be of type 'number'.
 
 ## Examples
-```
+```js
 inNumericOrder([1,2,3,4]); // --> true
 
 inNumericOrder([-1.03, -1.02, 0.222, 0.223]); // --> true
